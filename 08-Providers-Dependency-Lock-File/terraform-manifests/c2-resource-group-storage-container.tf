@@ -18,7 +18,7 @@ resource "azurerm_storage_account" "mysa" {
   location                 = azurerm_resource_group.myrg1.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
-  account_encryption_source = "Microsoft.Storage"
+  //account_encryption_source = "Microsoft.Storage"
 
   tags = {
     environment = "staging"
