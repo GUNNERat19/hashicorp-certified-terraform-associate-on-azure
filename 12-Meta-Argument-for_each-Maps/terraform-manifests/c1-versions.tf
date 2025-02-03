@@ -11,5 +11,7 @@ terraform {
 
 # Provider Block
 provider "azurerm" {
- features {}          
+ features {}  
+ subscription_id = "03bcf9e1-bfd0-4535-8262-137108f5b101"
+
 }
