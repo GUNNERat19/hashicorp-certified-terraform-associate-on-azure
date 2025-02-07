@@ -13,8 +13,8 @@ terraform {
   }
 # Terraform State Storage to Azure Storage Container
   backend "azurerm" {
-    resource_group_name   = "terraform-storage-rg"
-    storage_account_name  = "terraformstate201"
+    resource_group_name   = "terraform_storage_rg1"
+    storage_account_name  = "tfstoragebarup"
     container_name        = "tfstatefiles"
     key                   = "terraform.tfstate"
   } 
@@ -22,7 +22,8 @@ terraform {
 
 # Provider Block
 provider "azurerm" {
- features {}          
+ features {}  
+ subscription_id = "03bcf9e1-bfd0-4535-8262-137108f5b101"     
 }
 
 # Random String Resource
@@ -30,7 +31,7 @@ resource "random_string" "myrandom" {
   length = 6
   upper = false 
   special = false
-  number = false   
+  numeric = false   
 }
 
 
