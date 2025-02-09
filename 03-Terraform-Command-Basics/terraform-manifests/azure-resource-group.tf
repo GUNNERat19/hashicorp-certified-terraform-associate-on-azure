@@ -13,6 +13,7 @@ terraform {
 provider "azurerm" {
   features {}
   
+  
   # Add your subscription ID here
   subscription_id = "03bcf9e1-bfd0-4535-8262-137108f5b101"
   // helloworld okokokok
